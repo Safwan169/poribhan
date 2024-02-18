@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- daisy ui and tailwind link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="px-4 lg:px-0 lg:w-[1200px] mx-auto">
+        <!-- nav  -->
+
+        <div class="lg:mt-7">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 -ml-5 w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a class="text-gray-500 font-medium raleway">Home</a></li>
+                            <li>
+                                <a class="text-gray-500 font-medium raleway"></a>About</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-500 font-medium raleway"></a>Destination</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-500 font-medium raleway"></a>Search</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost raleway font-extrabold -ml-6 lg:-ml-5 text-2xl lg:text-4xl">S-Ticket </a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-gray-500  font-medium raleway">Home</a></li>
+                        <li>
+                            <a class="text-gray-500 font-medium raleway text-[16px]">About</a>
+                        </li>
+                        <li>
+                            <a href="#Destination "
+                                class="text-gray-500 font-medium raleway text-[16px]">Destination</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-500 font-medium raleway text-[16px]">Search</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="navbar-end raleway font-medium gap-4">
+
+                    <a
+                        class="btn font-medium raleway border-green-300 text-green-500 bg-green-100 hover:bg-green-200 hover:scale-[1.03]">Bus
+
+                        <i class="fa-solid fa-van-shuttle"></i> </a>
+                </div>
+            </div>
+        </div>
+        <!-- header pic -->
+        <section class="mt-5">
+            <div class=" w-full  ">
+
+                <div id="" class="relative w-full border min-h-max">
+                    <img src="images/banner.png" class="w-full  " />
+                    <div class="absolute top-[100px] flex flex-col items-center  w-full gap-7">
+                        <p class=" text-white text-center raleway font-extrabold w-[742px]  text-6xl ">End-to-End Travel
+                            with <br><span class="text-green-500">S Paribahan</span></p>
+                        <p class="text-gray-300  w-[691px] text-center inter font-medium">Yes, you can run unit tests
+                            and view the results directly within the app. The integrated testing features allow for a
+                            streamlined .</p>
+                        <a
+                            class="btn font-extrabold raleway  border-green-400 text-black bg-green-500  hover:bg-green-200 hover:scale-[1.03] mt-4">Buy
+                            Tickets</a>
+                    </div>
+                    <!-- here need work -->
+                </div>
+
+            </div>
+
+
+
+        </section>
+        <!-- best for you -->
+        <section class="mt-10">
+            <div class=" flex flex-col items-center ">
+                <!-- coupon -->
+
+                <p class="raleway font-bold text-4xl  text-center">Best offers for you</p>
+                <div class="flex justify-between gap-5 mt-5">
+                    <!-- 1st coupon -->
+                    <div class="  relative  w-[590px] h-[220px] bg-yellow-500 rounded-3xl">
+                        <p class=" ">
+                        <p class=" ml-6 mt-5 p-5   "> <span class="inter font-black text-black text-[40px] ">15%
+                                OFF</span><br>
+                            <span class="text-black font-semibold  text-xl"> on your next purchase</span><br>
+                            <span class="text-gray-500 ">use by January 2024</span>
+                        </p>
+                        </p>
+                        <!-- 1st coupon text -->
+                        <p class=" absolute left-[310px] top-[0px]"><img src="images/cupon-devider.png" alt="">
+                        <p class="absolute left-[400px] top-[70px]"">
+                            <span class=" raleway font-extrabold text-[32px] ">NEW15 </span><br>
+                               <span class=" text-gray-500">Coupon Code</span>
+                        </p>
+                        </p>
+
+                    </div>
+                    <!-- 2nd coupon -->
+                    <div class=" relative  w-[590px] h-[220px] bg-red-400 rounded-3xl">
+                        <p class=" ">
+                        <p class=" ml-6 mt-5 p-5   "> <span class="inter font-black text-black text-[40px] ">20%
+                                OFF</span><br>
+                            <span class="text-black font-semibold  text-xl"> on your next purchase</span><br>
+                            <span class="text-gray-500 ">use by January 2024</span>
+                        </p>
+                        </p>
+                        <!-- 2nd coupon text -->
+                        <p class=" absolute left-[310px] top-[0px]"><img src="images/cupon-devider.png" alt="">
+                        <p class="absolute left-[395px] top-[70px]">
+                            <span class=" raleway font-extrabold text-[32px] ">Couple 20 </span><br>
+                            <span class=" text-gray-500">Coupon Code</span>
+                        </p>
+                        </p>
+                    </div>
+                </div>
+                <!-- header last btn -->
+                <button class="btn border-green-500 text-green-500 mt-7 hover:bg-green-200">See All Offers</button>
+            </div>
+        </section>
+    </header>
+    <main class="px-4 mt-[220px] lg:px-0 lg:w-[1200px] mx-auto">
+        <div id="Destination" class="flex flex-col items-center gap-5">
+            <p class="raleway font-bold text-[40px]">S.F Paribahan</p>
+            <p class="inter font-normal text-[18px] w-[736px] text-center text-gray-500">Yes, you can run unit tests and
+                view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+        </div>
+        <div class=" p-5 flex justify-around  mx-0 items-center">
+            <div class="flex flex-col gap-5  w-3/4">
+                <div class="flex justify-between">
+                    <div class="flex items-center gap-5">
+                        <p><img src="images/bus-logo.png" alt=""></p>
+                        <div>
+                            <p class="raleway font-bold text-4xl">Greenline Paribahan</p>
+                            <p class="text-gray-500 text-[18px]">Coach-009-WEB ! AC_Business</p>
+                        </div>
+                    </div>
+                    <!-- seat count -->
+                    <p class="bg-green-100 w-[180px] items-center justify-center h-[56px] rounded-2xl flex gap-1 p-0">
+                        <img src="images/seat-green-filled.png" alt=""><span 
+                            class="text-green-500 inter text-[18px] font-medium"><span id="remaing-seats">40</span></span><span
+                            class="text-green-500 inter text-[18px] font-medium">Seats left</span>
+                    </p>
+
+                </div>
+                <div class="flex justify-between mt-6">
+                    <p class="raleway text-[18px] font-semibold text-gray-500">Route</p>
+                    <p class="inter text-[20px] font-bold">Dhaka - Sylhet</p>
+                </div>
+                <p class="text-gray-300 w-full  ">
+                    --------------------------------------------------------------------------------------------------------------------------------------
+                </p>
+
+                <div class="flex justify-between">
+                    <p class="raleway text-[18px] font-semibold text-gray-500">Departure Time</p>
+                    <p class="raleway text-[20px] font-bold"><span class="inter">9:00</span> PM</p>
+                </div>
+                <p class="text-gray-300 w-full   ">
+                    -------------------------------------------------------------------------------------------------------------------------------------
+                </p>
+                <div class="flex justify-around">
+                    <p class="inter font-bold text-[18px] bg-purple-100 rounded-xl p-5">Boarding Point - Laxmipur</p>
+                    <p class="inter font-bold text-[18px] bg-purple-100 rounded-xl p-5"> Dropping Point - Bogura</p>
+                    <p class="inter font-bold text-[18px] bg-purple-100 rounded-xl p-5"> Est. Time - 11 Hour</p>
+                </div>
+            </div>
+            <div class="-ml-16">
+                <img src="images/info-devider.png" alt="">
+            </div>
+            <div class="items-center -ml-[70px] flex flex-col gap-2">
+                <img src="images/fare.png" alt="">
+                <p class="raleway text-3xl font-bold text-center">550 Taka <br>
+                    <span class="raleway font-semibold text-2xl text-gray-500">Per Seat</span>
+                </p>
+            </div>
+        </div>
+        <div class="flex  justify-between ">
+            <!-- seat plan -->
+            <div class="mt-11 border-r border-dashed border-gray-300 mr-5 pr-5 w-3/5">
+                <p class="text-[18px] ml-10 font-bold">Select Your Seat</p>
+                <div class="flex justify-between mt-9">
+                    <div class="flex gap-2 ml-10">
+                        <p><img src="images/seat-gray.png" alt=""></p>
+                        <p class="text-gray-500">Available</p>
+                    </div>
+                    <div class="flex gap-2 mr-4">
+                        <p><img src="images/seat-green-filled.png" alt=""></p>
+                        <p class="text-emerald-500">Selected</p>
+                    </div>
+                </div>
+                <div class=" my-6 mr-7 flex  justify-end  ">
+                    <img src="images/st.png" alt="" class="w-14 text-gray-200">
+                </div>
+
+                <div class="grid grid-cols-6  gap-x-2 gap-y-5   ">
+
+                    <p
+                        class="bg-green-50 rounded-xl  text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500  ">
+                        A
+                    </p>
+                    <p
+                        id="A1" onclick="seatNumber(this)" class="btn bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        A1
+                    </p>
+                    <p
+                        id="A2" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500  col-span-2">
+                        A2</p>
+                    <p
+                        id="A3" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        A3
+                    </p>
+                    <p
+                        id="A4" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500  ">
+                        A4
+                    </p>
+                    <p
+                         class="bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        B
+                    </p>
+                    <p
+                        id="B1" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        B1
+                    </p>
+                    <p
+                        id="B2" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500  col-span-2">
+                        B2</p>
+                    <p
+                        id="B3" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        B3
+                    </p>
+                    <p
+                        id="B4" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        B4
+                    </p>
+                    <p
+                         class="bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        C
+                    </p>
+                    <p
+                        id="C1" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        C1
+                    </p>
+                    <p
+                        id="C2" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500  col-span-2">
+                        C2</p>
+                    <p
+                        id="C3" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        C3
+                    </p>
+                    <p
+                        id="C4" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        C4
+                    </p>
+                    <p
+                         class="bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        D
+                    </p>
+                    <p
+                        id="D1" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        D1
+                    </p>
+                    <p
+                        id="D2" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500  col-span-2">
+                        D2</p>
+                    <p
+                        id="D3" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        D3
+                    </p>
+                    <p
+                        id="D4" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        D4
+                    </p>
+                    <p
+                         class="bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        E
+                    </p>
+                    <p
+                        id="E1" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        E1
+                    </p>
+                    <p
+                        id="E2" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500  col-span-2">
+                        E2</p>
+                    <p
+                        id="E3" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        E3
+                    </p>
+                    <p
+                        id="E4" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        E4
+                    </p>
+                    <p
+                        class="bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        F
+                    </p>
+                    <p
+                        id="F1" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        F1
+                    </p>
+                    <p
+                        id="F2" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500  col-span-2">
+                        F2</p>
+                    <p
+                        id="F3" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        F3
+                    </p>
+                    <p
+                        id="F4" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        F4
+                    </p>
+                    <p
+                         class="bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        G
+                    </p>
+                    <p
+                        id="G1" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        G1
+                    </p>
+                    <p
+                        id="G2" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500  col-span-2">
+                        G2</p>
+                    <p
+                        id="G3" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        G3
+                    </p>
+                    <p
+                        id="G4" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        G4
+                    </p>
+                    <p
+                       class="bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        H
+                    </p>
+                    <p
+                        id="H1" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        H1
+                    </p>
+                    <p
+                        id="H2" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500  col-span-2">
+                        H2</p>
+                    <p
+                        id="H3" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        H3
+                    </p>
+                    <p
+                        id="H4" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        H4
+                    </p>
+                    <p
+                        class="bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        I
+                    </p>
+                    <p
+                        id="I1" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        I1
+                    </p>
+                    <p
+                        id="I2" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500  col-span-2">
+                        I2</p>
+                    <p
+                        id="I3" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        I3
+                    </p>
+                    <p
+                        id="I4" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        I4
+                    </p>
+                    <p
+                         class="bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        J
+                    </p>
+                    <p
+                        id="J1" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        J1
+                    </p>
+                    <p
+                        id="J2" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500  col-span-2">
+                        J2</p>
+                    <p
+                        id="J3" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        J3
+                    </p>
+                    <p
+                        id="J4" onclick="seatNumber(this)" class="btn  bg-green-50 rounded-xl text-center items-center flex justify-center w-[100px] h-[56px] inter text-gray-500 ">
+                        J4
+                    </p>
+                </div>
+
+            </div>
+            <!-- payment -->
+            <div class="  mt-20 w-[500px]">
+                <p class="text-3xl font-bold">Select your Seat </p>
+                <div class="border1 mt-9  ">
+                    <div class="flex justify-around border-b border-dashed pb-6 border-gray-300">
+                        <p class="text-black flex items-center justify-center font-bold text-xl ">seat <span id="total-seat"
+                                class="bg-green-400 text-center flex items-center justify-center p-4 rounded-2xl ml-2 h-1 text-white ">0</span>
+                        </p>
+                        <p class="text-black font-bold text-xl">class</p>
+                        <p class="text-black font-bold text-xl ">Price</p>
+                    </div>
+
+                    <div >
+                        <div id="paymentseatname1">
+
+                        </div>
+                        
+                    </div>
+
+
+                   <div id="hide" class="hidden">
+                    <div  id="seatandprice" class="flex  my-5 justify-around items-center " >
+                        <p id="payment-seat-name" class=" text-gray-500"></p>
+                        <p class=" ml-14 text-gray-500">Economy</p>
+                        <p class=" text-gray-500">550</p>
+                    </div>
+                   </div>
+                   <div id="hide1" class="hidden">
+                    <div  id="seatandprice" class="flex  my-5 justify-around items-center " >
+                        <p id="payment-seat-name" class=" text-gray-500"></p>
+                        <p class=" ml-14 text-gray-500">Economy</p>
+                        <p class=" text-gray-500">550</p>
+                    </div>
+                   </div>
+                   <div id="hide2" class="hidden">
+                    <div  id="seatandprice" class="flex  my-5 justify-around items-center " >
+                        <p id="payment-seat-name" class=" text-gray-500"></p>
+                        <p class=" ml-14 text-gray-500">Economy</p>
+                        <p class=" text-gray-500">550</p>
+                    </div>
+                   </div>
+                </div>
+
+                <div class="flex justify-between mx-5 mt-4">
+                    <p class="text-black text-xl font-semibold">Total Price</p>
+                    <p class="text-black text-xl font-semibold">BDT<span class="">1000</span></p>
+                </div>
+
+
+                <div class="mt-6 border-b border-dashed border-gray-300 pb-6">
+                    <label class="input flex justify-between  ">
+                        <input type="text" class="" placeholder="Have any coupon? ">
+                        <span
+                            class="btn bg-green-500 w-[100px] text-white font-bold -ml-[100px] hover:bg-green-600 ">Apply</span>
+                    </label>
+                </div>
+                <div class="flex justify-between mx-5 mt-4">
+                    <p class="text-black text-xl font-semibold">Grand Total</p>
+                    <p class="text-black text-xl font-semibold">BDT<span class="">1000</span></p>
+                </div>
+                <div class="mt-12 flex flex-col gap-4">
+                    <div class="mr-3">
+                        <p class="text-xl font-semibold my-4">Passenger Name</p>
+                        <input class="w-full h-12 p-5" ype="text" placeholder="Enter Your Name">
+                    </div>
+                    <div class="mr-3">
+                        <p class="text-xl font-semibold my-4"> phone Number</p>
+                        <input class="w-full h-12 p-5" type="number" placeholder="Enter Your phone number">
+                    </div>
+                    <div class="mr-3">
+                        <p class="text-xl font-semibold my-4">Email ID</p>
+                        <input class="w-full h-12 p-5" type="email" placeholder="Enter Your email id">
+                    </div>
+                    <button
+                        class="btn raleway bg-green-500 text-white font-bold text-2xl rounded-xl h-16 mr-3">Next</button>
+                    <div class="flex justify-center gap-11">
+                        <p class="text-gray-400 font-medium inter underline">Terms and Conditions</p>
+                        <p class="text-gray-400  font-medium  inter underline">Cancellation Policy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="all-function.js"></script>
+</body>
+
+</html>

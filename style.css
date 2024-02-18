@@ -1,0 +1,22 @@
+.raleway{
+    font-family: "Raleway", sans-serif;
+}
+.inter{
+    font-family: "Inter", sans-serif;
+}
+.border{
+border-right: 1px dashed lightgray;
+
+}
+.border1{
+    border-bottom: 1px solid lightgray;
+}
+.border2{
+    border: 1px solid red;
+}
+#Destination{
+    scroll-behavior: smooth;
+}
+.btn-bg{
+    background-color: lightgreen;
+}
