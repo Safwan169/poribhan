@@ -30,7 +30,7 @@ function seatNumber(event) {
      }
     
 
-if (allSeat[0]===seatName) {
+if (allSeat.length===1) {
     const hide=document.getElementById('hide')
     hide.classList.remove('hidden')
     const paymentSeatName=document.getElementById('payment-seat-name')
@@ -45,8 +45,7 @@ grd.innerText=bdtt
 const phn55=document.getElementById('phn')
 phn55.addEventListener('keyup',function(event){
     const phn555=event.target.value
-    
-    if (0<phn555) {
+    if ( phn555===0 || phn555>=1 ) {
         qq()
     
         
@@ -68,9 +67,17 @@ else if(allSeat.length===2){
    const grd=document.getElementById('grd')
    grd.innerText=bdt.innerText
 
-
+   const phn55=document.getElementById('phn')
+   phn55.addEventListener('keyup',function(event){
+       const phn555=event.target.value
+       if ( phn555===0 || phn555>1 ) {
+           qq()
+       
+           
+       }
+   })
 }
-else if(allSeat[2]===seatName){
+else if(allSeat.length===3){
     const hide2=document.getElementById('hide2')
     hide2.classList.remove('hidden')
     const paymentSeatName2=document.getElementById('payment-seat-name2')
@@ -82,9 +89,17 @@ else if(allSeat[2]===seatName){
    const grd=document.getElementById('grd')
    grd.innerText=bdt.innerText
 
-
+   const phn55=document.getElementById('phn')
+   phn55.addEventListener('keyup',function(event){
+       const phn555=event.target.value
+       if ( phn555===0 || phn555>1 ) {
+           qq()
+       
+           
+       }
+   })
 }
-else if(allSeat[3]===seatName){
+else if(allSeat.length===4){
     const hide3=document.getElementById('hide3')
     hide3.classList.remove('hidden')
     const paymentSeatName3=document.getElementById('payment-seat-name3')
@@ -98,9 +113,19 @@ else if(allSeat[3]===seatName){
    const grd=document.getElementById('grd')
    grd.innerText=bdt.innerText
   
-
+   const phn55=document.getElementById('phn')
+   phn55.addEventListener('keyup',function(event){
+       const phn555=event.target.value
+       if ( phn555===0 || phn555>1 ) {
+           qq()
+       
+           
+       }
+   })
 
 }
+console.log(allSeat.length)
+
 const price1=document.getElementById('price')
 
 const ticketPrice=price1
@@ -121,65 +146,33 @@ kk(cupons2)
 )
 
 function ap() {
-// sf()
-// kk()
+
 ee()
 
 const hidden=document.getElementById('hidden')
 hidden.classList.add('hidden')
 }
     
-// function sf(pp) {
-  
-//     if(pp==='NEW15'){
-//         // const grand=(document.getElementById('grd')).innerText
-//         // const ll=grand-(grand*(15/100))
-//         // document.getElementById('grd').innerText=ll
-        
-//         // const hidden=document.getElementById('hidden')
-//         // hidden.classList.add('hidden')
 
 
-//     }
-// //     else if(pp==='Couple 20'){
-// //         // const grand=document.getElementById('grd')
-// //         // const ll=grand-(grand*(20/100))
-// //         // grand.innerText=ll
-// //         // console.log(grand.innerText)
-// //         const grand=(document.getElementById('grd')).innerText
-// //         const ll=grand-(grand*(20/100))
-// //         document.getElementById('grd').innerText=ll
-// //         // const hidden=document.getElementById('hidden')
-// //         // hidden.classList.add('hidden')
-// // }
-
-
-// }
 const code=[]
 function kk(pp) {
     
 if(pp==='Couple 20'){
-    // const grand=document.getElementById('grd')
-    // const ll=grand-(grand*(20/100))
-    // grand.innerText=ll
-    // console.log(grand.innerText)
+ 
     const grand=(document.getElementById('grd')).innerText
     const ll=grand-(grand*(20/100))
     code.push(ll)
-    // document.getElementById('grd').innerText=ll
-    // const hidden=document.getElementById('hidden')
-    // hidden.classList.add('hidden')
+
 }
 else if(pp==="NEW15"){
     const grand=(document.getElementById('grd')).innerText
     const ll=grand-(grand*(15/100))
     code.push(ll)
-    // document.getElementById('grd').innerText=ll
    
 }
 }
-// const hidden=document.getElementById('hidden')
-// hidden.classList.add('hidden')
+
 
 function ee() {
 
@@ -188,12 +181,7 @@ function ee() {
 
 
 
-    
-// }
-// function saf(){
-//     document.getElementById('grd').innerText=ll
 
-// }
     
 }
 function nxt() {
@@ -211,9 +199,7 @@ const success1=document.getElementById('hidden1')
     success1.classList.add('hidden')
     
 }
-// if(allSeat[0]===seatName){
 
-// }
 function qq() {
     const lstBtn1=document.getElementById('lstBtn')
     lstBtn1.removeAttribute('disabled')
@@ -225,122 +211,3 @@ function phnNum() {
     
     
 }
-
-// const phn=document.getElementById('phn')
-// phn.addEventListener('keyup',function uu(event){
-//     const tt=event.target.value
-//     return tt;
-// })
-// if(allSeat.length=2  ){
-//     const lstBtn1=document.getElementById('lstBtn')
-//     lstBtn1.removeAttribute('disabled')
-// lstBtn()
-// }
-// function lstBtn(){
-    
-    
-
-
-
-// }
-
-
-
-        
- 
-    //  
-
-    //     }
-
-    // })
-
-    // if (cupons==='NEW15') {
-    //     const grd1=document.getElementById('grd')
-    //     console.log(grd1)
-        
-        // }
-        // else if (cupons2==='Coupon Code'){
-        //     console.log("yhuihju")
-        // }
-    
-
-    
-
-
-
-
-// reaming seat
-
-
-// pay 
-
-
-
-  
-
- 
-//  const input=document.getElementById('nxtbtn');
-//  const inputTxt=input.value
-//  console.log(inputTxt)
-
-
-
- //     if (allSeat.length=4) {
-    //         hide.classList.remove('hidden')
-    //         const paymentSeatName=document.getElementById('payment-seat-name')
-    //         paymentSeatName.innerText=allSeat[0]
-           
-    //     }else{
-    //         if(allSeat.length=3) {
-    //             hide1.classList.remove('hidden')
-    //             const paymentSeatName1=document.getElementById('payment-seat-name1')
-    //             paymentSeatName1.innerText=allSeat[1]
-               
-    //         }
-    //         else{
-                
-    //     if (allSeat.length=2) {
-    //         hide2.classList.remove('hidden')
-    //         const paymentSeatName2=document.getElementById('payment-seat-name2')
-    //         paymentSeatName2.innerText=allSeat[0]
-            
-    //     }
-    //         }
-    //     }
-    //    }
-    
-        
-
-//         const pk = `<div  id="seatandprice" class="flex  my-5 justify-around items-center " >
-//     <p id="payment-seat-name" class="fok text-gray-500"></p>
-//     <p class=" ml-14 text-gray-500">Economy</p>
-//     <p class=" text-gray-500">550</p>
-// </div>`
-//         const paymentSeatName11 = document.getElementById('paymentseatname1')
-
-
-        // const paymentSeatName=document.getElementById('payment-seat-name')
-        // for (let i = 0; i < 5; i++) {
-
-        //     // console.log(paymentSeatName11)
-
-
-        //     paymentSeatName11.innerHTML = pk
-        //     const paymentSeatName = document.getElementById('payment-seat-name')
-        //     paymentSeatName.innerText = seatName
-
-        // }
-
-
-        //     paymentSeatName11.inn=pk
-        // const Fok=document.getElementsByClassName('fok')
-        // Fok.innerText=allSeat[allSeat.length]
-
-        //   if (allSeat.length===1) {
-        //     paymentSeatName.innerText=allSeat[0]
-        // seatAndPrice.classList.remove('hidden')
-
-        //   }
-
-        // seatAndPrice1.classList.remove('hidden')
-        // seatAndPrice2.classList.remove('hidden'
