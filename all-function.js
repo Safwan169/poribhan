@@ -113,7 +113,7 @@ const dis=document.getElementById('dis')
 dis.addEventListener('keyup',function (event) {
 const cupons2=event.target.value;
 console.log(cupons2)
-sf(cupons2)
+kk(cupons2)
 
 }
 
@@ -121,39 +121,79 @@ sf(cupons2)
 )
 
 function ap() {
-sf()
-kk()
+// sf()
+// kk()
+ee()
+
+const hidden=document.getElementById('hidden')
+hidden.classList.add('hidden')
 }
     
-function sf(pp) {
+// function sf(pp) {
   
-    if(pp==='NEW15'){
-        const grand=(document.getElementById('grd')).innerText
-        const ll=grand-(grand*(15/100))
-        document.getElementById('grd').innerText=ll
+//     if(pp==='NEW15'){
+//         // const grand=(document.getElementById('grd')).innerText
+//         // const ll=grand-(grand*(15/100))
+//         // document.getElementById('grd').innerText=ll
         
-        // const hidden=document.getElementById('hidden')
-        // hidden.classList.add('hidden')
-    }
-    else if(pp==='Couple 20'){
-        // const grand=document.getElementById('grd')
-        // const ll=grand-(grand*(20/100))
-        // grand.innerText=ll
-        // console.log(grand.innerText)
-        const grand=(document.getElementById('grd')).innerText
-        const ll=grand-(grand*(20/100))
-        document.getElementById('grd').innerText=ll
-        // const hidden=document.getElementById('hidden')
-        // hidden.classList.add('hidden')
-}
-else{
+//         // const hidden=document.getElementById('hidden')
+//         // hidden.classList.add('hidden')
 
-}
 
+//     }
+// //     else if(pp==='Couple 20'){
+// //         // const grand=document.getElementById('grd')
+// //         // const ll=grand-(grand*(20/100))
+// //         // grand.innerText=ll
+// //         // console.log(grand.innerText)
+// //         const grand=(document.getElementById('grd')).innerText
+// //         const ll=grand-(grand*(20/100))
+// //         document.getElementById('grd').innerText=ll
+// //         // const hidden=document.getElementById('hidden')
+// //         // hidden.classList.add('hidden')
+// // }
+
+
+// }
+const code=[]
+function kk(pp) {
+    
+if(pp==='Couple 20'){
+    // const grand=document.getElementById('grd')
+    // const ll=grand-(grand*(20/100))
+    // grand.innerText=ll
+    // console.log(grand.innerText)
+    const grand=(document.getElementById('grd')).innerText
+    const ll=grand-(grand*(20/100))
+    code.push(ll)
+    // document.getElementById('grd').innerText=ll
+    // const hidden=document.getElementById('hidden')
+    // hidden.classList.add('hidden')
 }
-function kk() {
-    const hidden=document.getElementById('hidden')
-hidden.classList.add('hidden')
+else if(pp==="NEW15"){
+    const grand=(document.getElementById('grd')).innerText
+    const ll=grand-(grand*(15/100))
+    code.push(ll)
+    // document.getElementById('grd').innerText=ll
+   
+}
+}
+// const hidden=document.getElementById('hidden')
+// hidden.classList.add('hidden')
+
+function ee() {
+
+    document.getElementById('grd').innerText=code[0]
+    
+
+
+
+    
+// }
+// function saf(){
+//     document.getElementById('grd').innerText=ll
+
+// }
     
 }
 function nxt() {
