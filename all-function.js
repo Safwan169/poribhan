@@ -7,6 +7,7 @@ const totalSeat = document.getElementById('total-seat')
 
 const allSeat = [];
 
+
 // seat name
 function seatNumber(event) {
 
@@ -27,8 +28,8 @@ function seatNumber(event) {
       
    
      }
+    
 
-let tt=0
 if (allSeat[0]===seatName) {
     const hide=document.getElementById('hide')
     hide.classList.remove('hidden')
@@ -44,7 +45,7 @@ grd.innerText=bdtt
     
 }    
  
-else if(allSeat[1]===seatName){
+else if(allSeat.length===2){
     const hide1=document.getElementById('hide1')
     hide1.classList.remove('hidden')
     const paymentSeatName1=document.getElementById('payment-seat-name1')
@@ -135,6 +136,9 @@ function sf(pp) {
         // const hidden=document.getElementById('hidden')
         // hidden.classList.add('hidden')
 }
+else{
+
+}
 
 }
 function kk() {
@@ -142,6 +146,49 @@ function kk() {
 hidden.classList.add('hidden')
     
 }
+function nxt() {
+const hiddenAll1=document.getElementById('hiddenAll')
+    hiddenAll1.classList.add('hidden')
+const success1=document.getElementById('hidden1')
+
+    success1.classList.remove('hidden')
+}
+function confirm() {
+    const hiddenAll1=document.getElementById('hiddenAll')
+    hiddenAll1.classList.remove('hidden')
+const success1=document.getElementById('hidden1')
+
+    success1.classList.add('hidden')
+    
+}
+if(allSeat.length===1){
+qq()
+}
+function qq() {
+    const lstBtn1=document.getElementById('lstBtn')
+    lstBtn1.removeAttribute('disabled')
+}
+const lstBtn1=document.getElementById('lstBtn')
+console.log(lstBtn1)
+
+// const phn=document.getElementById('phn')
+// phn.addEventListener('keyup',function uu(event){
+//     const tt=event.target.value
+//     return tt;
+// })
+// if(allSeat.length=2  ){
+//     const lstBtn1=document.getElementById('lstBtn')
+//     lstBtn1.removeAttribute('disabled')
+// lstBtn()
+// }
+// function lstBtn(){
+    
+    
+
+
+
+// }
+
 
 
         
