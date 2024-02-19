@@ -42,7 +42,17 @@ console.log(bdt)
 const bdtt=bdt.innerText
 const grd=document.getElementById('grd')
 grd.innerText=bdtt
+const phn55=document.getElementById('phn')
+phn55.addEventListener('keyup',function(event){
+    const phn555=event.target.value
     
+    if (0<phn555) {
+        qq()
+    
+        
+    }
+})
+
 }    
  
 else if(allSeat.length===2){
@@ -161,15 +171,20 @@ const success1=document.getElementById('hidden1')
     success1.classList.add('hidden')
     
 }
-if(allSeat.length===1){
-qq()
-}
+// if(allSeat[0]===seatName){
+
+// }
 function qq() {
     const lstBtn1=document.getElementById('lstBtn')
     lstBtn1.removeAttribute('disabled')
 }
 const lstBtn1=document.getElementById('lstBtn')
 console.log(lstBtn1)
+function phnNum() {
+    const phn55=document.getElementById('phn')
+    
+    
+}
 
 // const phn=document.getElementById('phn')
 // phn.addEventListener('keyup',function uu(event){
