@@ -123,7 +123,7 @@
                         </p>
                         <!-- 1st coupon text -->
                         <p class=" absolute left-[310px] top-[0px]"><img src="images/cupon-devider.png" alt="">
-                        <p class="absolute left-[400px] top-[70px]"">
+                        <p class="absolute left-[400px] top-[70px]">
                             <span class=" raleway font-extrabold text-[32px] ">NEW15 </span><br>
                                <span class=" text-gray-500">Coupon Code</span>
                         </p>
@@ -433,31 +433,32 @@
                         <p class="text-black font-bold text-xl ">Price</p>
                     </div>
 
-                    <div >
-                        <div id="paymentseatname1">
-
-                        </div>
-                        
-                    </div>
 
 
                    <div id="hide" class="hidden">
                     <div  id="seatandprice" class="flex  my-5 justify-around items-center " >
                         <p id="payment-seat-name" class=" text-gray-500"></p>
                         <p class=" ml-14 text-gray-500">Economy</p>
-                        <p class=" text-gray-500">550</p>
+                        <p id="Price" class=" text-gray-500">550</p>
                     </div>
                    </div>
                    <div id="hide1" class="hidden">
                     <div  id="seatandprice" class="flex  my-5 justify-around items-center " >
-                        <p id="payment-seat-name" class=" text-gray-500"></p>
+                        <p id="payment-seat-name1" class=" text-gray-500"></p>
                         <p class=" ml-14 text-gray-500">Economy</p>
                         <p class=" text-gray-500">550</p>
                     </div>
                    </div>
                    <div id="hide2" class="hidden">
                     <div  id="seatandprice" class="flex  my-5 justify-around items-center " >
-                        <p id="payment-seat-name" class=" text-gray-500"></p>
+                        <p id="payment-seat-name2" class=" text-gray-500"></p>
+                        <p class=" ml-14 text-gray-500">Economy</p>
+                        <p class=" text-gray-500">550</p>
+                    </div>
+                   </div>
+                   <div id="hide3" class="hidden">
+                    <div  id="seatandprice" class="flex  my-5 justify-around items-center " >
+                        <p id="payment-seat-name3" class=" text-gray-500"></p>
                         <p class=" ml-14 text-gray-500">Economy</p>
                         <p class=" text-gray-500">550</p>
                     </div>
@@ -466,20 +467,20 @@
 
                 <div class="flex justify-between mx-5 mt-4">
                     <p class="text-black text-xl font-semibold">Total Price</p>
-                    <p class="text-black text-xl font-semibold">BDT<span class="">1000</span></p>
+                    <p  class="text-black text-xl font-semibold">BDT <span id="bdt">0</span></p>
                 </div>
 
 
-                <div class="mt-6 border-b border-dashed border-gray-300 pb-6">
+                <div id="hidden" class="hidden mt-6 border-b border-dashed border-gray-300 pb-6">
                     <label class="input flex justify-between  ">
-                        <input type="text" class="" placeholder="Have any coupon? ">
-                        <span
+                        <input id="dis" type="text" class="" placeholder="Have any coupon? ">
+                        <span onclick="ap()"
                             class="btn bg-green-500 w-[100px] text-white font-bold -ml-[100px] hover:bg-green-600 ">Apply</span>
                     </label>
                 </div>
                 <div class="flex justify-between mx-5 mt-4">
                     <p class="text-black text-xl font-semibold">Grand Total</p>
-                    <p class="text-black text-xl font-semibold">BDT<span class="">1000</span></p>
+                    <p class="text-black text-xl font-semibold">BDT <span id="grd" class="">0</span></p>
                 </div>
                 <div class="mt-12 flex flex-col gap-4">
                     <div class="mr-3">
@@ -488,14 +489,14 @@
                     </div>
                     <div class="mr-3">
                         <p class="text-xl font-semibold my-4"> phone Number</p>
-                        <input class="w-full h-12 p-5" type="number" placeholder="Enter Your phone number">
+                        <input id="phn" class="w-full h-12 p-5" type="number" placeholder="Enter Your phone number">
                     </div>
                     <div class="mr-3">
                         <p class="text-xl font-semibold my-4">Email ID</p>
-                        <input class="w-full h-12 p-5" type="email" placeholder="Enter Your email id">
+                        <input id="nxtbtn" class="w-full h-12 p-5" type="email" placeholder="Enter Your email id">
                     </div>
-                    <button
-                        class="btn raleway bg-green-500 text-white font-bold text-2xl rounded-xl h-16 mr-3">Next</button>
+                    <button 
+                        class="btn  raleway bg-green-500 text-white font-bold text-2xl rounded-xl h-16 mr-3" disabled>Next</button>
                     <div class="flex justify-center gap-11">
                         <p class="text-gray-400 font-medium inter underline">Terms and Conditions</p>
                         <p class="text-gray-400  font-medium  inter underline">Cancellation Policy</p>
